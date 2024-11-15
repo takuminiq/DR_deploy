@@ -10,7 +10,7 @@ services:
       - 80:80
       - 443:443
     links:                # このコンテナが依存するコンテナの識別名（キー）とそのエイリアス名（別名）の指定
-      - "db:db_container"
+      - "db:drdb_container"
     container_name: "drweb_container" # このコンテナの名前の指定
   # MySQL用のコンテナ（dbという識別名（キー）は任意で設定したもの）
   db:
